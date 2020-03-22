@@ -12,12 +12,12 @@
  */
 namespace Tmdb\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\GenericEvent;
 use Tmdb\Common\ParameterBag;
 use Tmdb\HttpClient\Request;
 use Tmdb\HttpClient\Response;
 
-class RequestEvent extends Event
+class RequestEvent extends GenericEvent
 {
     /**
      * @var Request
